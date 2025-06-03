@@ -207,16 +207,15 @@ body.light .back-button:hover {
 }
 
 .main-profile {
-  width: 100%; 
-  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 40px;
-  padding: 40px 20px;
+  padding: 40px 0;
   text-align: left;
-  height: calc(100vh - 120px); 
+  height: calc(100vh - 120px);
 }
+
 
 .profile-text {
   max-width: 400px;
