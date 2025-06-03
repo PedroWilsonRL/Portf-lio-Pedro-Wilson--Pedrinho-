@@ -249,7 +249,7 @@ body.light .profile-text {
 }
 
 .profile-photo {
-  width: 30%;
+  width: 40%;
   max-height: 80vh;
   border-radius: 12px;
   object-fit: cover;
