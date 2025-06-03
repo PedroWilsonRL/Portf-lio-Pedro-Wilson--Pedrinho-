@@ -225,7 +225,6 @@ body.light .back-button:hover {
   padding: 0;
   margin: 0;
   color: #fff;
-  animation: slideInFromRight 1s ease forwards;
 }
 
 
