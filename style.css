@@ -249,7 +249,7 @@ body.light .profile-text {
 }
 
 .profile-photo {
-  width: 40%;
+  width: 35%;
   max-height: 80vh;
   border-radius: 12px;
   object-fit: cover;
@@ -332,6 +332,46 @@ body.light .download-cv-btn:hover {
   white-space: nowrap;
   overflow: hidden;
 }
+
+@media (max-width: 768px) {
+  .main-profile {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: auto;
+    text-align: center;
+  }
+
+  .profile-text {
+    max-width: 100%;
+    padding: 20px 0;
+    animation: none;
+  }
+
+  .profile-text h2 {
+    font-size: 2rem;
+  }
+
+  .profile-text p {
+    font-size: 1rem;
+  }
+
+  .profile-photo {
+    width: 80%;
+    max-height: 300px;
+    margin-bottom: 20px;
+    animation: none;
+  }
+
+  .download-cv-btn {
+    transform: none;
+    opacity: 1;
+    margin-top: 20px;
+    animation: none;
+  }
+}
+
 
 .skills-section {
   padding: 40px 20px;
