@@ -209,18 +209,25 @@ body.light .back-button:hover {
 .main-profile {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 40px;
-  padding: 40px 0;
+  justify-content: space-between; 
+  padding: 40px 60px; 
   text-align: left;
   height: calc(100vh - 120px);
+  margin: 0;
+  width: 100vw;
+  box-sizing: border-box;
+  overflow: hidden;
 }
-
 
 .profile-text {
-  max-width: 90%;
+  flex: 1;
+  max-width: 600px; 
+  padding: 0;
+  margin: 0;
   color: #fff;
+  animation: slideInFromRight 1s ease forwards;
 }
+
 
 body.light .profile-text {
   color: #222;
@@ -241,6 +248,14 @@ body.light .profile-text {
   font-family: agency fb;
 }
 
+.profile-photo {
+  width: 400px;
+  max-height: 80vh;
+  border-radius: 12px;
+  object-fit: cover;
+  animation: slideInFromLeft 1s ease forwards;
+}
+
 @keyframes slideInFromLeft {
   0% {
     opacity: 0;
@@ -250,14 +265,6 @@ body.light .profile-text {
     opacity: 1;
     transform: translateX(0);
   }
-}
-
-.profile-photo {
-  max-width: 90%;
-  max-height: 80vh;
-  border-radius: 12px;
-  object-fit: cover;
-  animation: slideInFromLeft 1s ease forwards;
 }
 
 @keyframes slideInFromRight {
@@ -275,13 +282,6 @@ body.light .profile-text {
   animation: slideInFromRight 1s ease forwards;
 }
 
-.typing-cursor {
-  border-right: 2px solid #8257e6;
-  animation: blinkCursor 0.7s steps(1) infinite;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 @keyframes blinkCursor {
   0%, 100% {
     border-color: transparent;
@@ -289,6 +289,48 @@ body.light .profile-text {
   50% {
     border-color: #8257e6;
   }
+}
+
+.download-cv-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #8257e6;
+  color: #fff;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.download-cv-btn:hover {
+  background-color: #6a47c0;
+}
+
+body.light .download-cv-btn {
+  background-color: #6a47c0;
+  color: #fff;
+}
+
+body.light .download-cv-btn:hover {
+  background-color: #8257e6;
+}
+
+.download-cv-btn.slide-in-right {
+  animation: slideInFromRight 1s ease forwards;
+}
+
+
+.typing-cursor {
+  border-right: 2px solid #8257e6;
+  animation: blinkCursor 0.7s steps(1) infinite;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .skills-section {
@@ -353,44 +395,6 @@ body.light .skills-list li {
 
 body.light .skills-list li:hover {
   background-color: #d4d4d4;
-}
-
-.download-cv-btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 0;
-  background-color: #8257e6;
-  color: #fff;
-  font-weight: bold;
-  font-family: Arial, sans-serif;
-  font-size: 1.1rem;
-  border-radius: 8px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.download-cv-btn {
-  opacity: 0;
-  transform: translateX(100%);
-}
-
-
-.download-cv-btn:hover {
-  background-color: #6a47c0;
-}
-
-body.light .download-cv-btn {
-  background-color: #6a47c0;
-  color: #fff;
-}
-
-body.light .download-cv-btn:hover {
-  background-color: #8257e6;
-}
-
-.download-cv-btn.slide-in-right {
-  animation: slideInFromRight 1s ease forwards;
 }
 
 .bio-section {
