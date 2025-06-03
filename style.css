@@ -119,8 +119,8 @@ body.light .footer-title {
 }
 
 footer .social-links a img {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -575,8 +575,8 @@ html {
 }
 
 .copy-phone-button img {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   transition: transform 0.3s ease;
 }
 
@@ -596,8 +596,8 @@ body.light .copy-phone-button img {
 }
 
 .copy-email-button img {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   transition: transform 0.3s ease;
 }
 
