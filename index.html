@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio | Pedro Wilson</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <h1>Portfólio</h1>
+  <button class="theme-toggle" onclick="alternarTema()">
+  <img id="theme-icon" src="./src/images/switch2.png" alt="Alternar tema" />
+</button>
+
+  <nav id="nav-menu">
+  <button class="back-button" onclick="toggleMenu()">← Voltar</button>
+  <ul>
+    <li><a href="#bio-section">Sobre</a></li>
+    <li><a href="#skills-section">Habilidades</a></li>
+    <li><a href="#projects-section">Projetos</a></li>
+    <li><a href="#footer">Contato</a></li>
+  </ul>
+</nav>
+
+</header>
+
+
+  <main class="main-profile" id="main-profile">
+  <img src="./src/images/foto de perfil.jpg" alt="Foto do Pedro Wilson" class="profile-photo" />
+  <div class="profile-text">
+  <h2><span class="highlight-name">Pedro Wilson - Pedrinho</span></h2>
+  <p>Desenvolvedor/Programador focado na área Front-End | Next.js | React.js | Node.js</p>
+  <a href="./src/files/currículo-profissional2.pdf" download="PedroWilson_CV.pdf" class="download-cv-btn">Download CV</a>
+</div>
+</main>
+
+<section class="bio-section" id="bio-section">
+  <div class="bio-container">
+    <h2>Sobre Mim</h2>
+    <p>
+      Bacharel em Engenharia de Software (2020 - 2024) e Tecnólogo em Design Gráfico (2018 - 2019), sou um Desenvolvedor Front-End com com sólida base em design visual. Ao longo da minha trajetória, tenho me dedicado à criação de interfaces web e mobile, unindo estética e funcionalidade. Iniciei minha carreira desenvolvendo habilidades em design visual utilizando o Photoshop, o que me proporcionou uma base sólida para transformar conceitos criativos em interfaces intuitivas e eficientes por meio da programação front-end.
+    </p>
+  </div>
+</section>
+
+
+<section class="skills-section" id="skills-section">
+  <h2>Habilidades</h2>
+  <ul class="skills-list">
+    <li><img src="./src/images/javascript.png" alt="JavaScript" class="skill-icon" /> JavaScript (ES6+)</li>
+    <li><img src="./src/images/javascript.png" alt="React" class="skill-icon" /> React.js / Next.js</li>
+    <li><img src="./src/images/javascript.png" alt="Node.js" class="skill-icon" /> Node.js</li>
+    <li><img src="./src/images/html & css.png" alt="HTML5 & CSS3" class="skill-icon" /> HTML5 & CSS3</li>
+    <li><img src="./src/images/github.png" alt="Git" class="skill-icon" /> Git / GitHub</li>
+  </ul>
+</section>
+
+<section class="projects-section" id="projects-section">
+  <h2>Meus Projetos</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <img src="./src/images/ps5-ui.gif" alt="Preview PS5 UI" class="project-gif">
+      <h3>PS5-UI</h3>
+      <p>Uma recriação da interface de usuário do console PS5.</p>
+      <a href="https://github.com/PedroWilsonRL/ps5ui" target="_blank">Ver no GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <img src="./src/images/xbox-one-dashboard.gif" alt="Preview Xbox One Dashboard" class="project-gif">
+      <h3>XboxOne-Dashboard</h3>
+      <p>Uma recriação da interface de usuário do console Xbox One.</p>
+      <a href="https://github.com/PedroWilsonRL/xboxone-dashboard" target="_blank">Ver no GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <img src="./src/images/Loja-Front-End.gif" alt="Preview Loja Front-End" class="project-gif">
+      <h3>Loja-Front-End</h3>
+      <p>A recriação de uma loja fictícia de camisas de times de futebol.</p>
+      <a href="https://github.com/PedroWilsonRL/Loja-Front-End-Atualiza-o-?tab=readme-ov-file" target="_blank">Ver no GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <img src="./src/images/Pedrinho-Social-Network.gif" alt="Preview Pedrinho Social Network" class="project-gif">
+      <h3>Pedrinho-Social-Network</h3>
+      <p>A recriação de uma rede social estilo Twitter/X.</p>
+      <a href="https://github.com/PedroWilsonRL/Pedrinho-Social-Network-Atualiza-o-2-" target="_blank">Ver no GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <img src="./src/images/Teen-Titans-Food-Run.gif" alt="Preview Teen Titans Food Run" class="project-gif">
+      <h3>Teen-Titans-Food-Run</h3>
+      <p>Um jogo simples com o tema dos Jovens Titãs.</p>
+      <a href="https://github.com/PedroWilsonRL/Teen-Titans-Food-Run-Game-HTML-CSS-JavaScript" target="_blank">Ver no GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <img src="./src/images/Beast-Boy-Flappy-Chicken.gif" alt="Preview Beast Boy Flappy Chicken" class="project-gif">
+      <h3>Beast-Boy-Flappy-Chicken</h3>
+      <p>A recriação do jogo Flappy Bird com o tema dos Jovens Titãs.</p>
+      <a href="https://github.com/PedroWilsonRL/Beast-Boy-FlappyChicken-game-JavaScript" target="_blank">Ver no GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <img src="./src/images/YouTube-Plus.gif" alt="Preview YouTube+" class="project-gif">
+      <h3>YouTube+</h3>
+      <p>A recriação de uma página simulando um Streaming.</p>
+      <a href="https://github.com/PedroWilsonRL/P-gina-Streaming-YouTube-" target="_blank">Ver no GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <img src="./src/images/MusicPlayer.gif" alt="Preview MusicPlayer" class="project-gif">
+      <h3>MusicPlayer</h3>
+      <p>A recriação de um pequeno player de música no estilo Spotify.</p>
+      <a href="https://github.com/PedroWilsonRL/MusicPlayer---FrontEnd" target="_blank">Ver no GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <img src="./src/images/Tela-De-Login-RPG.gif" alt="Preview Tela De Login RPG" class="project-gif">
+      <h3>Tela-De-Login-RPG</h3>
+      <p>Uma página simulando uma tela de login de um jogo RPG.</p>
+      <a href="https://github.com/PedroWilsonRL/Tela-de-Login-RPG" target="_blank">Ver no GitHub</a>
+    </div>
+
+  </div>
+
+  
+  
+
+</section>
+
+
+
+
+  <footer id="footer">
+  <div class="footer-contact">
+    <h2 class="footer-title">Contato</h2>
+    <div class="social-links">
+      <a href="https://github.com/PedroWilsonRL" target="_blank" aria-label="GitHub">
+        <img src="./src/images/github.png" alt="GitHub">
+      </a>
+      <a href="https://www.linkedin.com/in/pedro-wilson-2a0b61276" target="_blank" aria-label="LinkedIn">
+        <img src="./src/images/linkedin.png" alt="LinkedIn">
+      </a>
+      <a href="https://www.instagram.com/iampedrowilson/?hl=pt-br" target="_blank" aria-label="Instagram">
+        <img src="./src/images/instagram.png" alt="Instagram">
+      </a>
+      <button class="copy-email-button" onclick="copiarEmail()" aria-label="Copiar E-mail">
+      <img src="./src/images/gmail.png" alt="Copiar E-mail">
+      </button>
+      <button class="copy-phone-button" onclick="copiarTelefone()" aria-label="Copiar Telefone">
+      <img src="./src/images/telefone.png" alt="Copiar Telefone">
+      </button>
+    </div>
+  </div>
+</footer>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
