@@ -25,7 +25,6 @@ function alternarTema() {
   icon.src = isLight ? "./src/images/switch1.png" : "./src/images/switch2.png";
 }
 
-
 function typeWriter(element, text, speed = 50, callback) {
   let i = 0;
   element.textContent = "";
@@ -95,4 +94,20 @@ function copiarEmail() {
 }
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible-section');
+      } else {
+        entry.target.classList.remove('visible-section');
+      }
+    });
+  }, {
+    threshold: 0.15, 
+  });
+
+  const sections = document.querySelectorAll('.hidden-section');
+  sections.forEach(section => observer.observe(section));
+});
 
