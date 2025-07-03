@@ -620,3 +620,15 @@ header {
   padding-right: 0;
   width: 100%;
 }
+
+.hidden-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.visible-section {
+  opacity: 1;
+  transform: translateY(0);
+}
+
