@@ -70,18 +70,6 @@ window.addEventListener("load", () => {
   }
 });
 
-function copiarTelefone() {
-  const telefone = '+55 62 998429470'; 
-
-  navigator.clipboard.writeText(telefone)
-    .then(() => {
-      alert('Telefone copiado para a área de transferência!');
-    })
-    .catch(err => {
-      console.error('Erro ao copiar o telefone:', err);
-      alert('Falha ao copiar o telefone.');
-    });
-}
 
 function copiarEmail() {
   const email = 'pedrowilsonrl@gmail.com';
@@ -93,6 +81,7 @@ function copiarEmail() {
       console.error('Erro ao copiar e-mail:', err);
     });
 }
+
 
 
 
